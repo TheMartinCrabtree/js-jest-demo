@@ -1,0 +1,16 @@
+{
+  "name": "javascript-jest-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^25.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
