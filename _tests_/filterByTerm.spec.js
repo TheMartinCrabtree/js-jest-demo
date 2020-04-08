@@ -1,3 +1,4 @@
+
 function filterByTerm(inputArr, keyword){
     return inputArr.filter(function(inputElem){
         return inputElem.animal.match(keyword);
@@ -19,7 +20,7 @@ describe("Cat Checker", ()=>{
         ];
 
         // running the test function that accepts the inputs 
-        // check to see if the input contains the word "link"
+        // check to see if the input contains the word "CAT"
         // and evaluate if the result matches the expected output
         expect(filterByTerm(input, "CAT")).toEqual(output);
     });
