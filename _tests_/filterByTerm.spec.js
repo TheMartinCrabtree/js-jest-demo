@@ -1,18 +1,15 @@
 
-function filterByTerm(inputArr, keyword){
-    return inputArr.filter(function(inputElem){
-        return inputElem.animal.match(keyword);
-    });
-}
+const filterByTerm = require("../testFunctions/filterByTerm");
 
 describe("Cat Checker", ()=>{
     test("Check if input contains the word CAT", ()=>{
         // array of test inputs
         const input = [
             { id: 1, animal: "good dog" },
-            { id: 2, animal: "good cat" },
+            { id: 2, animal: "good DOG" },
             { id: 3, animal: "bad CAT" }
         ];
+
 
         // expected output from the test
         const output = [
@@ -22,6 +19,9 @@ describe("Cat Checker", ()=>{
         // running the test function that accepts the inputs 
         // check to see if the input contains the word "CAT"
         // and evaluate if the result matches the expected output
-        expect(filterByTerm(input, "CAT")).toEqual(output);
+        expect(filterByTerm(input, "cat")).toEqual(output);
     });
 });
+
+
+
