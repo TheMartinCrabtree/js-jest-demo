@@ -1,5 +1,5 @@
 function filterByTerm(inputArr, keyword){
-    // covering outliers and special cases
+    // covering outliers and edge cases
     if(!inputArr)throw Error("No input or null input array provided");
     if(!keyword)throw Error("No keyword or empty keyword provided");
 
